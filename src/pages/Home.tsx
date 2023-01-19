@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {Text, View, StyleSheet} from 'react-native';
+import HomeOrganisms from '../componets/organisms/HomeOrganisms';
 
 
 import {getAllUsers} from '../services/UserServices'
@@ -16,7 +17,7 @@ const Home = ({  }) => {
     
   return (
     <View style={styles. container}>
-     <Text> Home </Text>
+        <HomeOrganisms/>
     </View>
   )
 }
