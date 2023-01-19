@@ -14,7 +14,8 @@ const Home = ({  }) => {
     const [userList, setuserList] = useState<UserDataTypes[]>([])
     const navigation = useNavigation<NativeStackNavigationProp<RootStackTypes>>();
     const getUsersData = async() => {
-        setuserList(await getAllUsers());
+        const responseData = await getAllUsers();
+        setuserList(responseData?.results);
     }
 
     const goToDetailsScreen = async(user : UserDataTypes) => {
