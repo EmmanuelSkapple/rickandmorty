@@ -11,15 +11,15 @@ export type RootStackTypes = {
 
 const StackComponent = createNativeStackNavigator<RootStackTypes>();
 
-function StackMain() {
+export default function StackMain() {
   return (
     <StackComponent.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName="Home"
+      initialRouteName='Home'
     >
       {/* Tutorial Overlay */}
-      <StackComponent.Screen name="Home" component={Home} />
-      <StackComponent.Screen name="DetailsUser" component={DetailsUser} />
+      <StackComponent.Screen name='Home' component={Home} />
+      <StackComponent.Screen name='DetailsUser' component={DetailsUser} />
     </StackComponent.Navigator>
   )
 }
