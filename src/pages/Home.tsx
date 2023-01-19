@@ -8,6 +8,7 @@ import {getAllUsers} from '../services/UserServices'
 import { UserDataTypes } from '../../types/DataTypes';
 import { RootStackTypes } from '../routers/StackNavigator';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Home = ({  }) => {
     const [userList, setuserList] = useState<UserDataTypes[]>([])
@@ -20,18 +21,17 @@ const Home = ({  }) => {
         navigation.navigate('DetailsUser',{user})
     }
     
-    
     useEffect(() => {
         getUsersData()
     }, [])
     
   return (
-    <View style={styles. container}>
+    <SafeAreaView style={styles. container}>
         <HomeOrganisms
             userList={userList}
             showDetailsUser = {goToDetailsScreen}
         />
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -39,6 +39,7 @@ const Home = ({  }) => {
 const styles = StyleSheet.create({
  container: {
     flex:1,
+    padding:12
  },
 });
 
