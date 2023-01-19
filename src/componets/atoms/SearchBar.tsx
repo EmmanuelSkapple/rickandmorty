@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import { Text, TextInput, View, StyleSheet } from "react-native";
 import { SearchBarProps } from "../../../types/AtomsTypes";
 
 
-const SearchBar = ({ value, callBackChange } : SearchBarProps) => {
+const SearchBar: FC<SearchBarProps> = ({ value, callBackChange }) => {
   return (
     <View style={styles.inputContainer} >
       <TextInput

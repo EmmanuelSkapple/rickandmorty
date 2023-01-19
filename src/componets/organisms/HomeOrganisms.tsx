@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { UserDataTypes } from "../../../types/DataTypes";
 import { HomeOrganismsProps } from "../../../types/OrganismsTypes";
 import SearchBar from "../atoms/SearchBar";
+import UserList from "../molecules/UserList";
 
 const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
   const [userListFilter, setUserListFilter] = useState<UserDataTypes[]>([]);
@@ -20,10 +21,17 @@ const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <SearchBar value={nameToSearch} callBackChange={searchUserForName} />
+      <UserList userList={userList} showDetailsUser={showDetailsUser}  />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+ container: {
+    flex:1
+ },
+});
 
 export default HomeOrganisms;
