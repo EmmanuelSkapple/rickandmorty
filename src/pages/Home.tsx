@@ -1,9 +1,7 @@
-import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react'
-import {Text, View, StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import HomeOrganisms from '../componets/organisms/HomeOrganisms';
-
-
+import { useNavigation } from '@react-navigation/native';
 import {getAllUsers} from '../services/UserServices'
 import { UserDataTypes } from '../../types/DataTypes';
 import { RootStackTypes } from '../routers/StackNavigator';

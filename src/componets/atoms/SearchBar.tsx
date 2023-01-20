@@ -1,5 +1,5 @@
-import React, { useState, FC } from "react";
-import { Text, TextInput, View, StyleSheet } from "react-native";
+import React, { FC } from "react";
+import { TextInput, View, StyleSheet } from "react-native";
 import { SearchBarProps } from "../../../types/AtomsTypes";
 
 

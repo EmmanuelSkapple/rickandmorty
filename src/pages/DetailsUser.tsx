@@ -1,9 +1,9 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react'
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Feather from 'react-native-vector-icons/Feather';
 import { DetailsUserProps } from '../../types/PagesTypes';
+import { useNavigation } from '@react-navigation/native';
 import DetailsOrganisms from '../componets/organisms/DetailsOrganisms';
 
 const DetailsUser = ({ route }:DetailsUserProps) => {

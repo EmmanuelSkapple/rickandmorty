@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import {FlatList, StyleSheet, View} from 'react-native';
 import { UserDataTypes } from '../../../types/DataTypes';
-import { UserItemProps, UserListProps } from '../../../types/MoleculesTypes';
+import { UserListProps } from '../../../types/MoleculesTypes';
 import UserItem from './UserItem';
 
 

@@ -1,5 +1,4 @@
 import { ImageStyle } from 'react-native';
-import {UserDataTypes} from './DataTypes';
 
 export interface SearchBarProps {
     value: string;
