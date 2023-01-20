@@ -9,7 +9,7 @@ import UserItem from './UserItem';
 const UserList: FC<UserListProps> = ({userList, showDetailsUser }) => {
     const renderItemUser = ({item, index }:{item : UserDataTypes, index : number}) => {
         return(
-            <UserItem key={item.id} user={item} />
+            <UserItem key={item.id} user={item} showDetailsUser={showDetailsUser} />
         )
     }
   return (

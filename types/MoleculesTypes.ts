@@ -7,4 +7,5 @@ export interface UserListProps {
 
 export interface UserItemProps {
     user: UserDataTypes;
+    showDetailsUser: (user : UserDataTypes) => void;
 }

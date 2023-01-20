@@ -10,7 +10,7 @@ const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
   const [nameToSearch, setNameToSearch] = useState("");
   useEffect(() => {
     setUserListFilter(userList ? userList : []);
-  }, []);
+  }, [userList]);
 
   const searchUserForName = (name: string) => {
     setNameToSearch(name);
