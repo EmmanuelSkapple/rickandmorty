@@ -10,4 +10,11 @@ export interface AvatarProps {
     imageUrl : string;
     size?: number;
     customStyle?: ImageStyle;
+    border?: boolean;
+}
+
+export interface ItemInfoUserProps {
+    title: string;
+    subtitle: string;
+    iconName?: string;
 }

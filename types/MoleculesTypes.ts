@@ -9,3 +9,8 @@ export interface UserItemProps {
     user: UserDataTypes;
     showDetailsUser: (user : UserDataTypes) => void;
 }
+
+
+export interface ExtraUserInfoProps {
+    user: UserDataTypes;
+}

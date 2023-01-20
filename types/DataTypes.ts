@@ -4,9 +4,9 @@ export interface UserDataTypes {
     gender: string;
     id: string;
     image: string;
-    location: Object;
+    location: any;
     name: string;
-    origin: Object;
+    origin: any;
     species: string;
     status: string;
     type: string;
