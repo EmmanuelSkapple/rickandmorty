@@ -2,7 +2,7 @@
 
 ![alt text](https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2022/12/rick-morty-6x09-2893084.jpg?itok=hYT5zGFF)
 
-## Tecnology
+## About project
 This is a simple project where display a list of character of the serie and you can view more details of each one
 
 ## Tecnology
