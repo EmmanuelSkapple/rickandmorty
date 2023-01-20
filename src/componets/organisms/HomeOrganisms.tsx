@@ -14,7 +14,7 @@ const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
 
   const searchUserForName = (name: string) => {
     setNameToSearch(name);
-    const newListOfUsers = userListFilter.filter((item) =>
+    const newListOfUsers = userList.filter((item) =>
       item.name.toLowerCase().includes(name.toLowerCase())
     );
     setUserListFilter(newListOfUsers);
@@ -23,7 +23,7 @@ const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
   return (
     <View style={styles.container}>
       <SearchBar value={nameToSearch} callBackChange={searchUserForName} />
-      <UserList userList={userList} showDetailsUser={showDetailsUser}  />
+      <UserList userList={userListFilter} showDetailsUser={showDetailsUser}  />
     </View>
   );
 };
