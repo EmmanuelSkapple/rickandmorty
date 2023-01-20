@@ -3,9 +3,12 @@ import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { UserItemProps } from "../../../types/MoleculesTypes";
 import Avatar from "../atoms/Avatar";
 
-const UserItem: FC<UserItemProps> = ({ user,  showDetailsUser}) => {
+const UserItem: FC<UserItemProps> = ({ user, showDetailsUser }) => {
   return (
-    <TouchableOpacity onPress={()=>showDetailsUser(user)} style={styles.container}>
+    <TouchableOpacity
+      onPress={() => showDetailsUser(user)}
+      style={styles.container}
+    >
       <Avatar imageUrl={user.image} size={45} />
       <View style={styles.infoContainer}>
         <Text style={styles.title}> {user.name} </Text>
@@ -20,7 +23,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-start",
     alignContent: "center",
-    marginVertical:8
+    marginVertical: 8
   },
   infoContainer: {
     marginLeft: 4

@@ -1,9 +1,16 @@
-import React, {FC} from 'react'
-import { Image } from 'react-native';
-import { AvatarProps } from '../../../types/AtomsTypes';
+import React, { FC } from "react";
+import { Image } from "react-native";
+import { AvatarProps } from "../../../types/AtomsTypes";
 
-const Avatar: FC<AvatarProps> = ({ imageUrl, size = 24, customStyle = {}, border}) => {
-    const borderStyle =border ? {borderWidth:size/24,borderColor:'#ffff'} :{}
+const Avatar: FC<AvatarProps> = ({
+  imageUrl,
+  size = 24,
+  customStyle = {},
+  border
+}) => {
+  const borderStyle = border
+    ? { borderWidth: size / 24, borderColor: "#ffff" }
+    : {};
   return (
     <Image
       source={{ uri: imageUrl }}
@@ -15,7 +22,7 @@ const Avatar: FC<AvatarProps> = ({ imageUrl, size = 24, customStyle = {}, border
         ...customStyle
       }}
     />
-    )
-}
+  );
+};
 
 export default Avatar;

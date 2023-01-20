@@ -1,10 +1,10 @@
-import {UserDataTypes} from './DataTypes';
+import { UserDataTypes } from "./DataTypes";
 
 export interface HomeOrganismsProps {
-    userList: UserDataTypes[];
-    showDetailsUser: (user : UserDataTypes) => void;
+  userList: UserDataTypes[];
+  showDetailsUser: (user: UserDataTypes) => void;
 }
 
-export interface DetailsOrganismsProps  {
-    user : UserDataTypes | undefined;
+export interface DetailsOrganismsProps {
+  user: UserDataTypes | undefined;
 }

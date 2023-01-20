@@ -20,7 +20,7 @@ const DetailsOrganisms: FC<DetailsOrganismsProps> = ({ user }) => {
         <Text style={styles.title}> {user.name} </Text>
         <Text style={styles.subtitle}> {user.species} </Text>
       </View>
-      <ExtraUserInfo user={user}/>
+      <ExtraUserInfo user={user} />
     </View>
   );
 };
@@ -32,19 +32,19 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center"
   },
-  paperContainer:{
-    justifyContent:'center',
-    alignItems:'center',
-    padding:24,
-    width:'100%',
-    borderRadius:8,
-    backgroundColor:'#503B93'
+  paperContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 24,
+    width: "100%",
+    borderRadius: 8,
+    backgroundColor: "#503B93"
   },
   title: {
     fontSize: 18,
     fontWeight: "600",
-    color:'#fff',
-    marginTop:8
+    color: "#fff",
+    marginTop: 8
   },
   subtitle: {
     fontSize: 16,

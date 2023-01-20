@@ -23,15 +23,15 @@ const HomeOrganisms = ({ userList, showDetailsUser }: HomeOrganismsProps) => {
   return (
     <View style={styles.container}>
       <SearchBar value={nameToSearch} callBackChange={searchUserForName} />
-      <UserList userList={userListFilter} showDetailsUser={showDetailsUser}  />
+      <UserList userList={userListFilter} showDetailsUser={showDetailsUser} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
- container: {
-    flex:1
- },
+  container: {
+    flex: 1
+  }
 });
 
 export default HomeOrganisms;

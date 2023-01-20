@@ -1,9 +1,9 @@
-import { UserDataTypes } from "./DataTypes"
+import { UserDataTypes } from "./DataTypes";
 
 export interface DetailsUserProps {
-    route?:{
-        params:{
-            user: UserDataTypes
-        }
-    }
+  route?: {
+    params: {
+      user: UserDataTypes;
+    };
+  };
 }
