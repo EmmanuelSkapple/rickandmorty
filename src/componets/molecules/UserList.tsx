@@ -26,7 +26,8 @@ const UserList: FC<UserListProps> = ({userList, showDetailsUser }) => {
 const styles = StyleSheet.create({
 listContainer: {
     flex:1,
-    width:'100%'
+    width:'100%',
+    marginTop:24
  },
 });
 export default UserList;
